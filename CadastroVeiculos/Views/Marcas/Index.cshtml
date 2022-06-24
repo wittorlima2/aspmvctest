@@ -1,0 +1,64 @@
+﻿@model ICollection<CadastroVeiculos.Models.MarcaViewModel>
+@{
+    ViewData["Title"] = "Marca";
+}
+
+<div class="panel-header bg-primary-gradient">
+    <div class="page-inner py-5">
+        <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+            <div>
+                <h2 class="text-white pb-2 fw-bold">Marcas</h2>
+                <h5 class="text-white op-7 mb-2">Módulo de gerenciamento de Marcas.</h5>
+            </div>
+            <div class="ml-md-auto py-2 py-md-0">
+                <button class="btn btn-white btn-border btn-round mr-2" onclick="location.href='@Url.Action("Create", "Marcas")'">
+                    <span class="btn-label">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                    Nova Marca
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-inner mt--5">
+    <div class="row mt--2">
+        <div class="col-md-12">
+            <div class="card full-height">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="basic-datatables" class="display table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Nome</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var marca in Model)
+                                    {
+                                        <tr>
+                                            <td>@marca.Id</td>
+                                            <td>@marca.Nome</td>
+                                            <td>@marca.StatuDesc</td>
+                                            <td>
+                                                <div class="form-button-action">
+                                                    <button type="button" data-toggle="tooltip" title="Editar" class="btn btn-link btn-primary btn-lg" data-original-title="Editar" onclick="location.href='@Url.Action("Edit", "Marcas", new  { Id = marca.Id })'">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

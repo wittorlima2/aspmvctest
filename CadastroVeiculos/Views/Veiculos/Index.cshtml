@@ -1,0 +1,77 @@
+﻿@model ICollection<CadastroVeiculos.Models.VeiculoViewModel>
+@{
+    ViewData["Title"] = "Veículos";
+}
+
+<div class="panel-header bg-primary-gradient">
+    <div class="page-inner py-5">
+        <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+            <div>
+                <h2 class="text-white pb-2 fw-bold">Veículos</h2>
+                <h5 class="text-white op-7 mb-2">Módulo de gerenciamento de Veículos.</h5>
+            </div>
+            <div class="ml-md-auto py-2 py-md-0">
+                <button class="btn btn-white btn-border btn-round mr-2" onclick="location.href='@Url.Action("Create", "Veiculos")'">
+                    <span class="btn-label">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                    Novo Veiculo
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-inner mt--5">
+    <div class="row mt--2">
+        <div class="col-md-12">
+            <div class="card full-height">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="basic-datatables" class="display table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Proprietario</th>
+                                        <th>RENAVAM</th>
+                                        <th>Marca</th>
+                                        <th>Modelo</th>
+                                        <th>Ano Fabricação</th>
+                                        <th>Ano Modelo</th>
+                                        <th>Quilometragem</th>
+                                        <th>Valor</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var veiculo in Model)
+                                    {
+                                        <tr>
+                                            <td>@veiculo.Id</td>
+                                            <td>@veiculo.Proprietario.Nome</td>
+                                            <td>@veiculo.RENAVAM</td>
+                                            <td>@veiculo.Marca.Nome</td>
+                                            <td>@veiculo.Modelo</td>
+                                            <td>@veiculo.AnoFabricacao</td>
+                                            <td>@veiculo.AnoModelo</td>
+                                            <td>@veiculo.Quilometragem</td>
+                                            <td>@veiculo.Valor</td>
+                                            <td>@veiculo.Status</td>
+                                            <td>
+                                                <div class="form-button-action">
+                                                    <button type="button" data-toggle="tooltip" title="Editar" class="btn btn-link btn-primary btn-lg" data-original-title="Editar" onclick="location.href='@Url.Action("Edit", "Veiculos", new  { Id = veiculo.Id })'">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

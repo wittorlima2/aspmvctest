@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Presentation", "01 Presentation", "{2C3042DC-D1A7-4A21-AD7D-632F79E9CA48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Domain", "03 Domain", "{6F3EF3FB-14D8-4093-9583-FDCD0A570C85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Infra", "04 Infra", "{0CB9DDF5-7E77-460B-A830-37190B683193}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Test", "06 Test", "{E39FCD57-C25A-48C2-9C2D-406CADEAE51B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroVeiculos", "CadastroVeiculos\CadastroVeiculos.csproj", "{125B87DC-2E2A-42F8-B42B-D7773042F908}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroVeiculos.Domain", "CadastroVeiculos.Domain\CadastroVeiculos.Domain.csproj", "{6F388BAC-AD8F-419E-B520-EA52A1665B90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroVeiculos.Infra.Data", "CadastroVeiculas.Infra\CadastroVeiculos.Infra.Data.csproj", "{E4E9E82C-70B8-4D9E-9818-A49B2C016E95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroVeiculos.Test", "CadastroVeiculos.Test\CadastroVeiculos.Test.csproj", "{2142D409-6A0D-4747-A6C1-3EDD5830A5A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroVeiculos.Domain.Services", "CadastroVeiculos.Domain.Services\CadastroVeiculos.Domain.Services.csproj", "{93C3A4E7-6628-4E66-8524-F0FDDBD9CBC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Messages", "05 Messages", "{9A4043BE-6158-412B-918B-A8D9833DA5AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroVeiculos.Message", "CadastroVeiculos.MessageBus\CadastroVeiculos.Message.csproj", "{CAEADD26-2B0B-45DE-9EB9-D7675645B967}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Application", "02 Application", "{ADA30093-D939-4879-B5D7-8017D9D8B3BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroVeiculos.Application.Services", "CadastroVeiculos.Application.Services\CadastroVeiculos.Application.Services.csproj", "{16496DAC-C5FD-43BD-9295-A5A48CB40517}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125B87DC-2E2A-42F8-B42B-D7773042F908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125B87DC-2E2A-42F8-B42B-D7773042F908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125B87DC-2E2A-42F8-B42B-D7773042F908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125B87DC-2E2A-42F8-B42B-D7773042F908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F388BAC-AD8F-419E-B520-EA52A1665B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F388BAC-AD8F-419E-B520-EA52A1665B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F388BAC-AD8F-419E-B520-EA52A1665B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F388BAC-AD8F-419E-B520-EA52A1665B90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E9E82C-70B8-4D9E-9818-A49B2C016E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E9E82C-70B8-4D9E-9818-A49B2C016E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E9E82C-70B8-4D9E-9818-A49B2C016E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E9E82C-70B8-4D9E-9818-A49B2C016E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2142D409-6A0D-4747-A6C1-3EDD5830A5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2142D409-6A0D-4747-A6C1-3EDD5830A5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2142D409-6A0D-4747-A6C1-3EDD5830A5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2142D409-6A0D-4747-A6C1-3EDD5830A5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C3A4E7-6628-4E66-8524-F0FDDBD9CBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C3A4E7-6628-4E66-8524-F0FDDBD9CBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C3A4E7-6628-4E66-8524-F0FDDBD9CBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C3A4E7-6628-4E66-8524-F0FDDBD9CBC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAEADD26-2B0B-45DE-9EB9-D7675645B967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEADD26-2B0B-45DE-9EB9-D7675645B967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEADD26-2B0B-45DE-9EB9-D7675645B967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEADD26-2B0B-45DE-9EB9-D7675645B967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16496DAC-C5FD-43BD-9295-A5A48CB40517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16496DAC-C5FD-43BD-9295-A5A48CB40517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16496DAC-C5FD-43BD-9295-A5A48CB40517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16496DAC-C5FD-43BD-9295-A5A48CB40517}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{125B87DC-2E2A-42F8-B42B-D7773042F908} = {2C3042DC-D1A7-4A21-AD7D-632F79E9CA48}
+		{6F388BAC-AD8F-419E-B520-EA52A1665B90} = {6F3EF3FB-14D8-4093-9583-FDCD0A570C85}
+		{E4E9E82C-70B8-4D9E-9818-A49B2C016E95} = {0CB9DDF5-7E77-460B-A830-37190B683193}
+		{2142D409-6A0D-4747-A6C1-3EDD5830A5A8} = {E39FCD57-C25A-48C2-9C2D-406CADEAE51B}
+		{93C3A4E7-6628-4E66-8524-F0FDDBD9CBC3} = {6F3EF3FB-14D8-4093-9583-FDCD0A570C85}
+		{CAEADD26-2B0B-45DE-9EB9-D7675645B967} = {9A4043BE-6158-412B-918B-A8D9833DA5AE}
+		{16496DAC-C5FD-43BD-9295-A5A48CB40517} = {ADA30093-D939-4879-B5D7-8017D9D8B3BC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AFC7809-B6EE-4C0B-8E9E-5F7188AAB2A9}
+	EndGlobalSection
+EndGlobal

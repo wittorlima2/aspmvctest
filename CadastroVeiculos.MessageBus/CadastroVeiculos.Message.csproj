@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CadastroVeiculos.Application.Services\CadastroVeiculos.Application.Services.csproj" />
+    <ProjectReference Include="..\CadastroVeiculos.Domain\CadastroVeiculos.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
