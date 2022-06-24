@@ -4,4 +4,4 @@ Banco de dados SQL SERVER
 
 RabbitMq
 
-Configurações de string de conexão, rabbit e email no arquivo appsettings
+Configurações de string de conexão, rabbit e email no arquivo appsettings.Development.json
